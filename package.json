@@ -1,0 +1,31 @@
+{
+  "name": "mushrooms",
+  "version": "1.0.0",
+  "description": "Mushrooms game that is going to be driven by vanilla js",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "watch": "babel src -d dist -w",
+    "build": "babel src -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/roclimber1/mushrooms.git"
+  },
+  "keywords": [
+    "mushrooms",
+    "game"
+  ],
+  "author": "roclimber",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/roclimber1/mushrooms/issues"
+  },
+  "homepage": "https://github.com/roclimber1/mushrooms#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/cli": "^7.15.4",
+    "@babel/core": "^7.15.5",
+    "@babel/preset-env": "^7.15.6"
+  }
+}
