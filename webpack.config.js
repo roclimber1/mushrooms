@@ -2,7 +2,6 @@
 
 
 const HtmlWebpackPlugin = require('html-webpack-plugin')
-// const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const path = require('path')
 
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin
@@ -39,26 +38,6 @@ const getRules = (publicPath = '') => ([
             }
         }
     },
-    // {
-    //     test: /\.css$/,
-    //     exclude: /node_modules/,
-    //     use: ExtractTextPlugin.extract(
-    //         {
-    //             fallback: 'style-loader',
-    //             use: ['css-loader']
-    //         }
-    //     )
-    // },
-    // {
-    //     test: /\.scss$/,
-    //     exclude: /node_modules/,
-    //     use: ExtractTextPlugin.extract(
-    //         {
-    //             fallback: 'style-loader',
-    //             use: ['css-loader', 'sass-loader']
-    //         }
-    //     )
-    // },
     {
         test: /\.(woff(2)?|ttf|eot)(\?v=\d+\.\d+\.\d+)?$/,
         use: [
@@ -97,7 +76,6 @@ module.exports = (env, argv) => {
         new HtmlWebpackPlugin({
             template: './public/index.html'
         })
-        // new ExtractTextPlugin({ filename: '[name].css' })
     ]
     plugins.push(
         new BundleAnalyzerPlugin({

@@ -11,7 +11,7 @@ class Game {
     private geometry
     private material
     private mesh
-
+    
 
     constructor(width: number, height: number) {
         this.init(width, height)
