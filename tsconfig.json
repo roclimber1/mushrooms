@@ -1,0 +1,15 @@
+
+
+{
+    "compilerOptions": {
+        "baseUrl": "./",
+        "module": "commonjs",
+        "removeComments": true,
+        "allowJs": true,
+        "allowSyntheticDefaultImports": true,
+        "preserveConstEnums": true,
+        "sourceMap": true
+    },
+    "include": ["**/*"],
+    "exclude": ["node_modules", "**/*.spec.ts"]
+}

@@ -62,7 +62,9 @@ module.exports = {
             'arraysInArrays': false,
             'objectsInArrays': false,
             'singleValue': false
-        }]
+        }],
+
+        'no-inferrable-types': false
     }
 }
 

@@ -3,10 +3,12 @@
   "version": "1.0.0",
   "description": "Mushrooms game that is going to be driven by vanilla js",
   "main": "index.js",
+  "type": "commonjs",
   "scripts": {
     "test": "test",
+    "start": "webpack-dev-server --mode=development --open --hot",
     "watch": "babel src -d dist -w --extensions '.ts'",
-    "build": "babel src -d dist --extensions '.ts'"
+    "build": "webpack --mode=development"
   },
   "repository": {
     "type": "git",
@@ -22,7 +24,9 @@
     "url": "https://github.com/roclimber1/mushrooms/issues"
   },
   "homepage": "https://github.com/roclimber1/mushrooms#readme",
-  "dependencies": {},
+  "dependencies": {
+    "three": "^0.132.2"
+  },
   "devDependencies": {
     "@babel/cli": "^7.15.4",
     "@babel/core": "^7.15.5",
@@ -30,7 +34,20 @@
     "@babel/preset-typescript": "^7.15.0",
     "@typescript-eslint/eslint-plugin": "^4.31.0",
     "@typescript-eslint/parser": "^4.31.0",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^6.2.0",
     "eslint": "^7.32.0",
-    "typescript": "^4.4.3"
+    "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.3.2",
+    "sass": "^1.39.2",
+    "sass-loader": "^12.1.0",
+    "style-loader": "^3.2.1",
+    "ts-loader": "^9.2.5",
+    "typescript": "^4.4.3",
+    "webpack": "^5.52.1",
+    "webpack-bundle-analyzer": "^4.4.2",
+    "webpack-cli": "^4.8.0",
+    "webpack-dev-server": "^4.2.0"
   }
 }
